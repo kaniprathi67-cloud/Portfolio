@@ -1,101 +1,728 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kanishka B | Portfolio</title>
+
+    <!-- Bootstrap CSS Only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="index.css">
-<style>
-:root{
-    --bg-primary:purple;
-    --bg-secondary:pink;
-    --text-primary:white;
-    --text-secondary:pink;
-    background-color:var(--bg-primary);
-}
-</style>
+    
+    <!-- Font Awesome -->
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
 </head>
+
 <body>
 
-<nav class="navbar">
-    <div class="logo">
-        <span>{} </span>Kanishka B
-    </div>
-   
-    <ul class="nav-links">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Project">Project</a></li>
-        <li><a href="#contact">Contect</a></li>
-        <button class="cv-button">download CV</button>
-    </ul>
-
-    
-</nav>
-<header>
-     <!-- <div class="bg-image">
-        <img src="code.jpg">
-    </div> -->
-    <section id="home" class="main">
-        
-        <div class="main-content">
-        <h3>hello,I'm</h3>
-        <h1>Kanishka B</h1>
-        <h2>Python <span>Fullstack Developer</span></h2>
-        <p> I build mordern and responsive web applications using Python, React and mordern technologies</p>
-    
-    <div class="main-buttons">
-
-        <a href="" class="button1">View Projects</a>
-        <a href="" class="button2">Contact Me</a>
-    </div>
-    
-    
-    <div class="social-icon">
-        <a href=""><i class="fab fab-github"></i></a> 
-        <a href=""><i class="fab fab-linkedin"></i></a> 
-        <a href=""><i class="fab fab-twitter"></i></a> 
-        <a href=""><i class="fab fab-instagram"></i></a> 
-    </div>
-    
-    </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h4>ABOUT ME</h4>
-        <h2>passinate about building digital solutions</h2>
-
-        <div class="about-card">
-            <!-- <img src="profile.jpg.jpeg"> -->
-            <div class="about-text">
-            
-            </div>
-    </div>
-
-    </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <div class="row bg-primary text-light p-3">
-            <div class="col-12">
-    <div class="card1">
-        <div class="col-2">
-        <h3>About Myself</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur, ex sed alias molestias unde, sint, explicabo dolorum veritatis nesciunt nam laudantium. </p>
+
+        <a class="navbar-brand fw-bold" href="#">
+            <span>&lt;/&gt;</span> KANISHKA B
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <a class="cv-btn" href="#">Download CV</a>
+                </li>
+
+            </ul>
+
+        </div>
     </div>
-    </div>
-    <div class="card2">
-        <h3>My Skills</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur, ex sed alias molestias unde, sint, explicabo dolorum veritatis nesciunt nam laudantium. </p>
-    </div>
-    <div class="card3">
-        <h3>My Skills</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur, ex sed alias molestias unde, sint, explicabo dolorum veritatis nesciunt nam laudantium. </p>
-    </div>
-    <div class="card4">
-        <h3>My Skills</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur, ex sed alias molestias unde, sint, explicabo dolorum veritatis nesciunt nam laudantium. </p>
-    </div>
+</nav>
 
 
-     </div>
-    </section>
+<!-- HOME -->
+<section id="home" class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <p class="hello">HELLO, I'M</p>
+
+                <h1>Kanishka B</h1>
+
+                <h2>
+                    Aspiring <span>Full Stack Developer</span>
+                </h2>
+
+                <p class="hero-text">
+                    I am passionate about building scalable,
+                    user-friendly and innovative web applications
+                    using modern technologies.
+                </p>
+
+                <a href="#projects" class="btn main-btn">
+                    View Projects →
+                </a>
+
+                <a href="#contact" class="btn outline-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="col-lg-5 text-center">
+
+                <div class="profile">
+                     <img src="portkani.jpg" alt="Kanishka">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="about-heading text-center">
+            <span>ABOUT ME</span>
+            <h2>Passionate about building digital solutions</h2>
+            <div class="heading-line"></div>
+        </div>
+
+
+        <!-- About Card -->
+        <div class="about-card">
+
+            <div class="row align-items-center">
+
+                <!-- Profile -->
+                <div class="col-lg-4 text-center">
+
+                    <div class="profile-circle">
+                        <span>KB</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Content -->
+                <div class="col-lg-8">
+
+                    <div class="about-content">
+
+                        <p>
+                            I am an aspiring full-stack web developer with
+                            knowledge of front-end and back-end technologies.
+                            I am passionate about creating scalable,
+                            user-friendly web applications and innovative
+                            digital solutions.
+                        </p>
+
+                        <p>
+                            I am eager to start my professional journey,
+                            continuously learn new technologies and contribute
+                            to a dynamic development team.
+                        </p>
+
+
+                        <!-- Information -->
+                        <div class="row personal-info">
+
+                            <div class="col-md-6 info-item">
+                                <i class="fa-solid fa-user"></i>
+
+                                <div>
+                                    <strong>Name</strong>
+                                    <p>Kanishka B</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 info-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+
+                                <div>
+                                    <strong>Degree</strong>
+                                    <p>B.Tech Information Technology</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <div>
+                                    <strong>Location</strong>
+                                    <p>Namakkal, Tamil Nadu</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 info-item">
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>kaniprathi67@gmail.com</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- SKILLS --> 
+
+<section id="skills" class="section skills">
+
+    <div class="container">
+
+        <div class="title">
+            <small>MY SKILLS</small>
+            <h2>Technologies I work with</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="row g-4 skills-scroll">
+
+
+
+            <div class="skill-item">
+                <div class="skill-card">
+                    <div class="skill-icon">H</div>
+                    <h5>HTML</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%"></div>
+                    </div>
+
+                    <small>90%</small>
+                </div>
+            </div>
+
+
+            <div class="skill-item">
+                <div class="skill-card">
+                    <div class="skill-icon">CSS</div>
+                    <h5>CSS</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:85%"></div>
+                    </div>
+
+                    <small>85%</small>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-card">
+                    <div class="skill-icon">B</div>
+                    <h5>Bootstrap</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:80%"></div>
+                    </div>
+
+                    <small>80%</small>
+                </div>
+            </div>
+
+
+            <div class="skill-item">
+                <div class="skill-card">
+                    <div class="skill-icon">Py</div>
+                    <h5>Python</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:80%"></div>
+                    </div>
+
+                    <small>80%</small>
+                </div>
+            </div>
+
+
+            <div class="skill-item">
+                <div class="skill-card">
+                    <div class="skill-icon">JS</div>
+                    <h5>JavaScript</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:70%"></div>
+                    </div>
+
+                    <small>50%</small>
+                </div>
+
+            </div>
+
+
+            <div class="skill-item">
+                <div class="skill-card">
+                    <div class="skill-icon">SQL</div>
+                    <h5>SQL</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:75%"></div>
+                    </div>
+
+                    <small>80%</small>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-card">
+                    <div class="skill-icon">GT</div>
+                    <h5>Git hub</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:70%"></div>
+                    </div>
+
+                    <small>70%</small>
+                </div>
+            </div>
+
+
+
+            <div class="skill-item">
+                <div class="skill-card">
+                    <div class="skill-icon">EX</div>
+                    <h5>Excel</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:75%"></div>
+                    </div>
+
+                    <small>75%</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section> 
+
+
+<!-- EDUCATION SECTION -->
+<section class="education-section" id="education">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="edu-heading text-center">
+            <span>MY EDUCATION</span>
+            <h2>My Academic Journey</h2>
+            <div class="heading-line"></div>
+            <p>My journey of learning, growth and achievement</p>
+        </div>
+
+
+        <!-- Timeline -->
+        <div class="timeline">
+
+            <!-- Education 1 -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="year-badge">
+                        2022 - 2026
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3>B.Tech Information Technology</h3>
+
+                    <h5>
+                        Paavai Engineering College, Namakkal
+                    </h5>
+
+                    <p>
+                        Bachelor of Technology in Information Technology
+                        with <strong>71%</strong>.
+                    </p>
+
+                    <div class="achievement">
+                        <i class="fa-solid fa-star"></i>
+                        Information Technology
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Education 2 -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="year-badge">
+                        2020 - 2022
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <h3>Higher Secondary Certificate</h3>
+
+                    <h5>
+                        Little Angels Higher Secondary School
+                    </h5>
+
+                    <p>
+                        Higher Secondary Certificate (HSC)
+                        completed with <strong>63%</strong>.
+                    </p>
+
+                    <div class="achievement">
+                        <i class="fa-solid fa-star"></i>
+                        Higher Secondary Education
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Education 3 -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="year-badge">
+                        2019 - 2020
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+
+                    <h3>Secondary School Leaving Certificate</h3>
+
+                    <h5>
+                        Vethaloga Vidhyalaya Universal School
+                    </h5>
+
+                    <p>
+                        Secondary School Leaving Certificate
+                        (SSLC) completed with <strong>92%</strong>.
+                    </p>
+
+                    <div class="achievement">
+                        <i class="fa-solid fa-star"></i>
+                        School Education
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- PROJECTS SECTION -->
+<section class="projects-section" id="projects">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="section-heading text-center">
+            <span>MY PROJECTS</span>
+            <h2>Projects I've Worked On</h2>
+            <div class="heading-line"></div>
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Wi-Fi Gesture Controller Using IoT</h3>
+
+                        <p>
+                            An IoT-based system designed to control computer
+                            operations using hand gestures.
+                        </p>
+
+                        <ul>
+                            <li>
+                                Detects hand gestures through sensors and
+                                communicates over Wi-Fi.
+                            </li>
+
+                            <li>
+                                Performs mouse control, media playback and
+                                presentation navigation.
+                            </li>
+
+                            <li>
+                                Provides a touchless human-computer
+                                interaction experience.
+                            </li>
+                        </ul>
+
+                        <div class="technology">
+                            <span>IoT</span>
+                            <span>Python</span>
+                            <span>Wi-Fi</span>
+                            <span>PAJ7620U2</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Chitfund Management Software</h3>
+
+                        <p>
+                            A software application designed to automate
+                            and simplify the management of chitfund
+                            operations.
+                        </p>
+
+                        <ul>
+                            <li>
+                                Provides member registration and
+                                payment tracking.
+                            </li>
+
+                            <li>
+                                Supports auction management and
+                                report generation.
+                            </li>
+
+                            <li>
+                                Ensures accurate, transparent and secure
+                                handling of financial data.
+                            </li>
+
+                            <li>
+                                Reduces errors and improves overall
+                                operational efficiency.
+                            </li>
+                        </ul>
+
+                        <div class="technology">
+                            <span>Java</span>
+                            <span>Database</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-5">
+
+                <small>LET'S CONNECT</small>
+
+                <h2>Get in touch</h2>
+
+                <p>
+                    I'm always open to new opportunities,
+                    collaborations or just a friendly chat.
+                </p>
+
+                <p>✉ kaniprathi67@gmail.com</p>
+                <p>☎ +91 9698155302</p>
+                <p>⌖ Namakkal, Tamil Nadu, India</p>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <form>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <input type="text"
+                                   placeholder="Your Name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="email"
+                                   placeholder="Your Email">
+                        </div>
+
+                    </div>
+
+                    <textarea placeholder="Your Message"></textarea>
+
+                    <button type="submit">
+                        Send Message →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Kanishka B. All Rights Reserved.
+</footer>
+
+
+ <script>
+
+const skillsContainer = document.querySelector(".skills-scroll");
+
+let speed = 1;
+
+function autoScroll() {
+
+    skillsContainer.scrollLeft += speed;
+
+    if (
+        skillsContainer.scrollLeft +
+        skillsContainer.clientWidth >=
+        skillsContainer.scrollWidth
+    ) {
+        skillsContainer.scrollLeft = 0;
+    }
+
+    requestAnimationFrame(autoScroll);
+}
+
+autoScroll();
+
+</script>
+
+
 </body>
+</html>
